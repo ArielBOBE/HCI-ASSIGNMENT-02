@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HCI ASSIGNMENT-02</title>
 </head>
-<body>
+<body style="text-align: center;">
     <section>
         <style>
             body {
@@ -13,9 +13,81 @@
                 background-repeat: no-repeat;
                 background-size: 100%;
             }
+            #User_Info {
+                width: 400px;
+                margin: 0 auto;    
+                padding: 1em;  
+                text-align: center;   
+                background-color: rgba(245, 245, 220, 0.7);
+            }
+            #Music_Selection {
+                width: 1000px;
+                margin: 0 auto;    
+                padding: 1em;  
+                text-align: center;   
+                background-color: rgba(245, 245, 220, 0.7);
+            }
+            #top {
+                font-size: 60px;
+                color: green;
+            }
+            #Gender {
+                font-size: 20px;
+            }
+            .time {
+                font-size: 20px;
+            }
+            legend {
+                font-size: 20px;
+                background-color: beige;
+                border: 1px solid;
+                border-radius: 5px;
+            }
         </style>
-    
-    
+    </section>
+        <h1 id="top">HCI ASSIGNMENT-02</h1>
+    <section>
+        <fieldset id="User_Info">
+            <legend>User Info</legend>
+            <form>
+                <b>Username</b> <br><input type="form">
+                <br><br>
+                <b>Country of Origin</b></b> <br><input type="form">
+                <br><br>
+                <b>Date of Birth (DD/MM/YYYY)</b> <br><input type="date">
+                <br><br>
+                <u id="Gender">Gender</u>
+                <br>
+                <input type="radio" name="xgender">Male <input type="radio" name="xgender">Female
+                <br><br>
+                <u class="time">How often do you listen to music?</u>
+                <br>
+                <input type="radio" name="time"> Everyday <input type="radio" name="time"> A few times a week <input type="radio" name="time"> Rarely <input type="radio" name="time"> Never
+                <br><br>
+                <u class="time">When do you listen to music?</u>
+                <br>
+                <input type="checkbox"> Everyday <input type="checkbox"> When doing work <input type="checkbox"> When sleeping 
+                <br>
+                <input type="checkbox"> When exercising/gym
+                <br><br>
+                <input type="submit" name="submit">
+            </form>
+        </fieldset>
+    </section>
+    <br><br><br><br>
+    <section>
+        <fieldset id="Music_Selection">
+            <legend>Music Genre Selection</legend>
+            <table>
+                <tr>
+                    <th>s</th>
+                    <th>s</th>
+                </tr>
+                <tr>
+                    <td>s</td>
+                </tr>
+            </table>
+        </fieldset>
     </section>
 </body>
 </html>

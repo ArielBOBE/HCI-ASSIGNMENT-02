@@ -12,6 +12,8 @@
                 background-image: url(https://cdn.discordapp.com/attachments/876767435309604943/1156794510131593257/jzEaWVx.png?ex=65164457&is=6514f2d7&hm=d9490daef42d86cbac424780029f8695ebf0246e2caef7dc6b7df9958a5e6969&);
                 background-repeat: no-repeat;
                 background-size: 100%;
+                background-position: static;
+                background-attachment: fixed;
             }
             #User_Info {
                 width: 400px;
@@ -25,7 +27,7 @@
                 margin: 0 auto;    
                 padding: 1em;  
                 text-align: center;   
-                background-color: rgba(245, 245, 220, 0.7);
+                background-color: rgba(245, 245, 220, 0.9);
             }
             #top {
                 font-size: 60px;
@@ -43,6 +45,11 @@
                 border: 1px solid;
                 border-radius: 5px;
             }
+            table, th, td {
+                border: 1px solid;
+                text-align: left;
+                border-collapse: collapse;
+            }
         </style>
     </section>
         <h1 id="top">HCI ASSIGNMENT-02</h1>
@@ -54,7 +61,7 @@
                 <br><br>
                 <b>Country of Origin</b></b> <br><input type="form">
                 <br><br>
-                <b>Date of Birth (DD/MM/YYYY)</b> <br><input type="date">
+                <b>Date of Birth</b> <br><input type="date">
                 <br><br>
                 <u id="Gender">Gender</u>
                 <br>
@@ -66,9 +73,9 @@
                 <br><br>
                 <u class="time">When do you listen to music?</u>
                 <br>
-                <input type="checkbox"> Everyday <input type="checkbox"> When doing work <input type="checkbox"> When sleeping 
+                <input type="checkbox"> When doing chores<input type="checkbox"> When doing work <input type="checkbox"> When sleeping 
                 <br>
-                <input type="checkbox"> When exercising/gym
+                <input type="checkbox"> When exercising/gym <input type="checkbox"> When driving/riding transport
                 <br><br>
                 <input type="submit" name="submit">
             </form>
@@ -78,16 +85,66 @@
     <section>
         <fieldset id="Music_Selection">
             <legend>Music Genre Selection</legend>
-            <table>
+            <form>
+            <table style="width:100%">
                 <tr>
-                    <th>s</th>
-                    <th>s</th>
+                    <td colspan="2" rowspan="3">
+                        #1 favorite music genre: &nbsp; &nbsp; &nbsp; <input type="form">
+                        <br> 
+                        (Genre) Favorite artist/song: <input type="form">
+                    </td>
+                    <th>Music genre</th>
+                    <th>Sample</th>
                 </tr>
                 <tr>
-                    <td>s</td>
+                    <td>Jazz</td>
+                    <td>Blue Moon</td>
                 </tr>
+                <tr>
+                    <td>Classical</td>
+                    <td>placeholder</td>
+                </tr>
+                <tr>
+                <td colspan="2" rowspan="3">
+                    #2 favorite music genre: &nbsp; &nbsp; &nbsp; <input type="form">
+                    <br> 
+                    (Genre) Favorite artist/song: <input type="form">
+                </td>
+                <td>Pop</td>
+                <td>Laufey</td>
+                </tr>
+                <tr>
+                    <td>K-pop</td>
+                    <td>placeholder</td>
+                </tr>
+                <tr>
+                    <td>City Pop</td>
+                    <td>mayonaka no door</td>
+                </tr>
+                <tr></tr>
+                <td colspan="2" rowspan="3">
+                    #3 favorite music genre: &nbsp; &nbsp; &nbsp; <input type="form">
+                    <br> 
+                    (Genre) Favorite artist/song: <input type="form">
+                </td>
+                <td>Heavy Metal</td>
+                <td>Metallica(?)</td>
+                <tr>
+                    <td>Rock</td>
+                    <td>placeholder</td>
+                </tr>
+                <tr>
+                    <td>Rap</td>
+                    <td>placeholder</td>
+                </tr>
+                <tr>
+                    <td colspan="2"><input type="submit"></td>
+                </tr>
+                </table>
             </table>
+            </form>
         </fieldset>
+        <br><br><br>
     </section>
 </body>
 </html>
